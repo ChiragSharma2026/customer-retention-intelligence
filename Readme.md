@@ -1,17 +1,33 @@
 # 📊 Customer Retention & Revenue Intelligence System
 
-A end-to-end data analysis system built to analyze customer purchase behavior,
-identify revenue drivers, detect churn patterns, and provide actionable business
-recommendations.
+🚨 **97% of customers never return after their first purchase — making retention the biggest revenue bottleneck.**
+
+This project analyzes customer behavior across 96K+ transactions to identify why customers churn, where revenue is concentrated, and how businesses can improve retention and growth.
+
+🌐 **Live Demo:** [customer-retention-intelligence.streamlit.app](https://customer-retention-intelligence.streamlit.app)
+
+![Dashboard Preview](preview.png)
+
+---
+
+## 🎯 Objective
+
+Build a data system to:
+- Analyze customer purchase behavior
+- Identify revenue concentration patterns
+- Detect churn and retention failures
+- Generate actionable business strategies
 
 ---
 
 ## 🗂️ Dataset
 
-- **Source:** [Olist Brazilian E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (Kaggle)
-- **Records:** 96,478 delivered orders
-- **Customers:** 93,358 unique customers
-- **Period:** October 2016 – August 2018
+| Field | Details |
+|---|---|
+| Source | [Olist Brazilian E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (Kaggle) |
+| Orders | 96,478 delivered orders |
+| Customers | 93,358 unique customers |
+| Period | October 2016 – August 2018 |
 
 ---
 
@@ -62,20 +78,31 @@ Queries written against SQLite covering:
 | Top 20% Customer Revenue Share | 53.52% |
 | High Segment Revenue Share | 67.8% |
 
-- 🏆 **Top 20% of customers drive 53.52% of total revenue** — classic power law
-- 📉 **97% of customers never return after first purchase** — churn is the core business problem
-- 📦 **Health & Beauty is the #1 revenue category** at R$ 1.44M
-- 📆 **Retention collapses after Month 1** across all cohorts — onboarding is broken
+- 📉 **97% of customers churn after first purchase** → critical retention failure
+- 🏆 **Top 20% of customers generate 53.5% of revenue** → heavy dependency on a small segment
+- 📊 **High-value segment contributes 67.8% of revenue** → must be protected at all costs
+- 📆 **Retention drops sharply after Month 1** → onboarding and engagement breakdown
+- 📦 **Health & Beauty drives highest revenue** → strongest monetization category at R$ 1.44M
 
 ---
 
 ## 💡 Business Recommendations
 
-- 🎯 Launch a loyalty program targeting the High-value segment — they drive 67.8% of revenue
-- 📧 Implement post-purchase email sequences — most churn happens after order 1
-- 🛍️ Cross-sell Health & Beauty with Watches & Gifts — top 2 categories
-- 📊 Investigate Oct-Nov 2016 cohort drop-off visible in the heatmap
-- 💳 Introduce bundle offers for Mid-value segment to push them into High
+- 🎯 **Retain top 20% customers** → protects over 50% of total revenue
+- 📧 **Improve post-purchase engagement** → directly addresses 97% churn bottleneck
+- 🛍️ **Cross-sell Health & Beauty with Watches & Gifts** → increase average order value
+- 📊 **Fix first-month retention experience** → biggest drop-off window across all cohorts
+- 💳 **Upsell Mid-value customers with bundles** → easiest path to expanding high-value segment
+
+---
+
+## ⚡ Business Impact
+
+If implemented, these strategies can:
+- Reduce churn significantly from the current 97% baseline
+- Increase repeat purchase rate beyond the current 3%
+- Improve customer lifetime value across all segments
+- Reduce revenue dependency on the top 20% customer concentration
 
 ---
 
@@ -98,12 +125,16 @@ streamlit run app.py
 ---
 
 ## 📁 Project Structure
-├── archive/                  # Raw Olist CSV files
-├── loader.py                 # Data cleaning + SQLite ingestion
-├── queries.py                # SQL analysis queries
-├── analysis.py               # Segmentation + retention calculations
-├── app.py                    # Streamlit dashboard
-├── requirements.txt
+customer-retention-intelligence/
+├── archive/               # Raw Olist CSV files
+├── loader.py              # Data cleaning + SQLite ingestion
+├── queries.py             # SQL analysis queries
+├── analysis.py            # Segmentation + retention calculations
+├── app.py                 # Streamlit dashboard
+├── requirements.txt       # Python dependencies
 └── README.md
-
 ---
+
+## 📌 Resume Bullet
+
+> Built a customer retention analytics system analyzing 96K+ transactions across 93K customers using SQL (CTEs, window functions, cohort analysis), Python, and Streamlit; identified 97% first-purchase churn rate and that top 20% of customers drive 53.52% of revenue, enabling targeted retention strategies. Deployed live on Streamlit Cloud.
