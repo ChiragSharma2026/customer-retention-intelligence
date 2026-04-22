@@ -125,6 +125,8 @@ streamlit run app.py
 ---
 
 ## 📁 Project Structure
+
+```
 customer-retention-intelligence/
 ├── archive/               # Raw Olist CSV files
 ├── loader.py              # Data cleaning + SQLite ingestion
@@ -133,7 +135,7 @@ customer-retention-intelligence/
 ├── app.py                 # Streamlit dashboard
 ├── requirements.txt       # Python dependencies
 └── README.md
----
+```
 
 ## 📌 Resume Bullet
 
