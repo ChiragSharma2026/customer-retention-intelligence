@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+retail.db
+archive.zip
+result.pdf
+archive/olist_geolocation_dataset.csv
+archive/olist_order_reviews_dataset.csv
+archive/olist_sellers_dataset.csv
+archive/product_category_name_translation.csv
